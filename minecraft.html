@@ -1,0 +1,924 @@
+<!DOCTYPE html><html lang="en" class="cmmz3">
+<!-- Mirrored from mythicalcloud.com/minecraft by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 May 2025 09:20:28 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Mythicalcloud - Minecraft Hosting</title>
+    <link rel="icon" href="images/logo.png" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/vendors/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <meta name="twitter:image" content="images/logo.png"/>
+
+<style>
+/* Footer Base Styles */
+footer {
+  background-color: #0f172a; /* dark navy */
+  color: #ffffff;
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Layout */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+/* Logo and Description */
+.footer-logo {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+/* Footer Column Headings */
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* Copyright */
+.footer-copy {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+/* Social Icons */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footer-social a {
+  color: #94a3b8;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+}
+
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none; /* Optional: also removes underline on hover */
+  }
+</style>
+	<link href="../cdn.jsdelivr.net/gh/hung1001/font-awesome-pro%400ac23ca/css/all.css" rel="stylesheet" type="text/css" />
+	<!-- OWL Slider v2.3.4 -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+    <!-- Poppins -->
+	<link href="assets/css/fonts.css" rel="stylesheet"> 
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+<style>
+
+    .mc-card {
+        transition: transform 0.5s ease-in-out;
+        perspective: 1000px;
+    }
+
+    .rotating-card {
+        transform: rotateX(15deg);
+    }
+
+    .plan-icons {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .plan-icons:hover {
+        transform: scale(1.3);
+    }
+* {
+    text-decoration: none;
+}
+
+/* Apply the custom pointer */
+body {
+    cursor: url('../www.playdeltaforce.com/ossweb-img/mouse.png'), auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 30px; /* Adds space between menu items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: visible; /* Ensure dropdowns aren't clipped */
+}
+
+/* Ensure links have padding */
+nav ul li a {
+    padding: 10px 15px; /* Adjust padding */
+    text-decoration: none;
+    color: white;
+}
+
+/* Fix dropdown spacing issue */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown toggle button */
+.dropdown a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Make sure all dropdowns have the same design */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2); /* Increased opacity for better contrast */
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    min-width: 400px;
+    padding: 10px;
+    z-index: 9999; /* Increased z-index */
+    opacity: 0;
+    transform: scaleY(0) translateY(-10px);
+    transform-origin: top;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow: visible; /* Ensure dropdown content is visible */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: fixed; /* Prevents clipping */
+        top: 100px; /* Adjust according to your navbar height */
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 70%; /* Ensures good spacing on mobile */
+    }
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for items */
+.dropdown-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Show dropdown on open */
+.dropdown.open .dropdown-menu {
+    display: grid;
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+}
+
+/* Style for logos inside dropdown items */
+.dropdown-menu li a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+</style>
+
+<body class="c4f4x cnihn cs2bp c55gg czrq6">
+
+    <!-- Page wrapper -->
+    <div class="crm2f cbvce cxgh5 cfebz c4agq">
+
+        <!-- Site header -->
+        <header class="ca5ue ca0gw cverl">
+            <div class="co3q6 csm51 csya4 ccyhi">
+                <div class="cm7bi c2sao c4jjw c4agq cm0fl">
+        
+                    <!-- Site branding -->
+                    <div class="ci0vw">
+                        <!-- Logo -->
+                        <a class="cwban" href="index.html" aria-label="ww">
+                            <img class="cbdyn" src="images/logoo.png" width="120" height="80" alt="ww">
+                        </a>
+                    </div>
+        
+<!-- Desktop navigation -->
+<nav class="cp37h cjnbw ch9bk">
+    <!-- Desktop menu links -->
+    <ul class="csqqr c2sao cbsu6 c4agq c9wgl">
+
+        <!-- Game Hosting Dropdown -->
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle">ɢᴀᴍᴇs ʜᴏsᴛɪɴɢ</a>
+            <ul class="dropdown-menu">
+                <li><a href="minecraft.html"><img src="images/logo.png" alt="logo">ᴍɪɴᴇᴄʀᴀꜰᴛ</a></li>
+                <li><a href="rust.html"><img src="images/logo.png" alt="logo">ʀᴜꜱᴛ</a></li>
+                <li><a href="ark.html"><img src="images/logo.png" alt="logo">ᴀʀᴋ ꜱᴜʀᴠɪᴠᴀʟ</a></li>
+            </ul>
+        </li>
+
+        <!-- VPS Hosting Dropdown -->
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle">ᴏᴛʜᴇʀ</a>
+            <ul class="dropdown-menu">
+                <li><a href="vps.html"><img src="images/logo.png" alt="logo">ᴠᴘs ʜᴏsᴛɪɴɢ</a></li>
+                <li><a href="bot.html"><img src="images/logo.png" alt="logo">ʙᴏᴛ ʜᴏsᴛɪɴɢ</a></li>
+            </ul>
+        </li>
+
+        <!-- info Dropdown -->
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle">ɪᴍᴘᴏʀᴛᴀɴᴛ</a>
+            <ul class="dropdown-menu">
+                <li><a href="about.html"><img src="images/logo.png" alt="logo">ᴀʙᴏᴜᴛ ᴜs</a></li>
+                <li><a href="contact.html"><img src="images/logo.png" alt="logo">ᴄᴏɴᴛᴀᴄᴛ ᴜs</a></li>
+                <li><a href="tos.html"><img src="images/logo.png" alt="logo">ᴛᴇʀᴍs & sᴇʀᴠɪᴄᴇ</a></li>
+                <li><a href="priv.html"><img src="images/logo.png" alt="logo">ᴘʀɪᴠᴀᴄʏ ᴘᴏʟɪᴄʏ</a></li>
+                <li><a href="refund.html"><img src="images/logo.png" alt="logo">ʀᴇꜰᴜɴᴅ ᴘᴏʟɪᴄʏ</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>        
+                    <!-- Desktop sign in links -->
+                    <ul class="c2sao cq21c ci0vw c4agq">
+                        <li class="cci1o">
+                            <a class="c3d7q c272e cegg3 c8isz c0z2s c1mpe ccqfq cit3o cx3jz cgi3a cqxsj c27r3 cfl4k ca0gw cq2yg" href="billing/index804a.html?rp=/login">
+                                <span class="c2sao cwban c27r3">
+                                    Login / Register <span class="c9pof c406y cxxyq c3fbv cx3jz cgi3a cqzh1">-&gt;</span>
+                                </span>
+                            </a>
+                        </li>
+                      
+                    </ul>
+
+
+
+<!-- Mobile menu -->
+<div class="c2sao c89zz cwap3 c4agq" x-data="{ expanded: false }">
+
+    <!-- Hamburger button -->
+    <button class="c381v" :class="{ 'active': expanded }" @click.stop="expanded = !expanded" aria-controls="mobile-nav" :aria-expanded="expanded">
+        <span class="cmmna">Menu</span>
+        <svg class="c0z2s cit3o cm1cr cx3jz cgi3a cqxsj csq2q c7vsq" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <rect y="2" width="20" height="2" rx="1"></rect>
+            <rect y="9" width="20" height="2" rx="1"></rect>
+            <rect y="16" width="20" height="2" rx="1"></rect>
+        </svg>
+    </button>
+
+    <!-- Mobile navigation -->
+    <nav id="mobile-nav" class="cbvce cml7t cpjek cgi3a ca5ue chez1 csm51 c1tcw ca0gw ccxsu ccyhi" x-ref="mobileNav" :style="expanded ? 'max-height: ' + $refs.mobileNav.scrollHeight + 'px; opacity: 1' : 'max-height: 0; opacity: .8'" @click.outside="expanded = false" @keydown.escape.window="expanded = false" x-cloak>
+        <ul class="c3d7q cy8oh c8nst coow7 cn544 ccyhi" style="display: flex; flex-direction: column; gap: 15px;">
+            <li><a href="minecraft.html" class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq">Minecraft</a></li>
+            <li><a href="rust.html" class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq">Rust</a></li>
+            <li><a href="ark.html" class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq">Ark Survival</a></li>
+            <li><a href="vps.html" class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq">ᴠᴘs ʜᴏsᴛɪɴɢ</a></li>
+            <li><a href="bot.html" class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq">ʙᴏᴛ ʜᴏsᴛɪɴɢ</a></li>
+            <li><a href="about.html" class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq">ᴀʙᴏᴜᴛ ᴜs</a></li>
+            <li><a href="contact.html" class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq">ᴄᴏɴᴛᴀᴄᴛ ᴜs</a></li>
+            <li><a href="tos.html" class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq">ᴛᴇʀᴍs & sᴇʀᴠɪᴄᴇ</a></li>
+            <li><a href="priv.html" class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq">ᴘʀɪᴠᴀᴄʏ ᴘᴏʟɪᴄʏ</a></li>
+            <li><a href="refund.html" class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq">REFUND ᴘᴏʟɪᴄʏ</a></li>
+        </ul>
+    </nav>
+</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page content -->
+        <main class="c9wgl">
+
+            <!-- Hero -->
+            <section class="c27r3">
+
+                <!-- Radial gradient -->
+                <div class="c3sb3 c2vxt czyer csqqr c21zy c2sao czqre c3x17 ca5ue cl6qg ch67j c4agq" aria-hidden="true">
+                    <div class="c9ua1 chor7 cw2sl cdfzt cz8e7 ca5ue cwmqr"></div>
+                    <div class="chor7 cpgjj cal1k cdfzt cutr4 ca5ue cbc5q cb4st"></div>
+                </div>
+
+                <!-- Particles animation -->
+                <div class="ca5ue cwmqr ch67j ci4x8" aria-hidden="true">
+                    <canvas data-particle-animation="" data-particle-quantity="15"></canvas>
+                </div>
+
+                <!-- Illustration -->
+                <div class="c3sb3 c2vxt c5by6 c3x17 cs26b ca5ue c7upq cnheb ch67j" aria-hidden="true">
+                    <img src="images/page-illustration.svg" class="cbdyn" width="1440" height="427" alt="Page Illustration">
+                </div>
+
+                <div class="co3q6 csm51 csya4 ccyhi">
+                    <div class="ckgtb cz17m cb2k1 cp02i">
+
+                        <!-- Hero content -->
+                        <div class="cw9su c80wd csya4">
+                            <h1 class="cc7gh ccqrz cx8zw c6df8 cfcmr ctwez cvc1j cbmj0" data-aos="fade-down">Minecraft Server Hosting</h1>
+                            <p class="cit3o cbgr1 cpvtt" data-aos="fade-down" data-aos-delay="200">High-performance Minecraft servers with instant setup and modpack support </p>
+                            <div class="cpp4l c9wnx ckigx cmcsl csko9 cavuv chcps csya4" data-aos="fade-down" data-aos-delay="400">
+                                
+                            </div>
+
+                        </div>
+	<div class="plans py-5">
+		<div class="container-fluid container-custom">
+            <div class="tab-content">
+            	<!-- Budget Plans -->
+            	<div id="budget" class="tab-pane active">
+            		<div class="row">
+            			<div class="col-lg-4 col-md-4">
+            				<div class="card mc-card mb-4 text-center">
+            					<img src="assets/images/mcicons/oak.png" class="img-fluid plan-icons">
+            					<div class="card-header py-4">
+            						<h2 class="mb-0">Oak</h2>
+            					</div>
+            					<div class="card-price py-2">
+            						&#8377;80 / <span>month</span>
+            					</div>
+            					<div class="card-body">
+            						<ul class="list-unstyled">
+            							<li><i class="fad fa-memory"></i> 2GB DDR4</li>
+            							<li><i class="fad fa-hdd"></i> 4GB NVMe SSD</li>
+            							<li><i class="fad fa-microchip"></i> Ryzen-7 (100 %)</li>
+            							<li><i class="fad fa-database"></i> 1 Cloud Backups</li>
+            						</ul>
+            						<div class="mt-4">
+            							<a href="billing/cart7d20.html?rp=/store/minecraft/oak" class="btn">Order now</a>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="col-lg-4 col-md-4">
+            				<div class="card mc-card mb-4 text-center">
+            					<img src="assets/images/mcicons/spruce.png" class="img-fluid plan-icons">
+            					<div class="card-header py-4">
+            						<h2 class="mb-0">Spruce</h2>
+            					</div>
+            					<div class="card-price py-2">
+            						&#8377;120 / <span>month</span>
+            					</div>
+            					<div class="card-body">
+            						<ul class="list-unstyled">
+            							<li><i class="fad fa-memory"></i> 3GB DDR4</li>
+            							<li><i class="fad fa-hdd"></i> 8GB NVMe SSD</li>
+            							<li><i class="fad fa-microchip"></i> Ryzen-7 (150 %)</li>
+            							<li><i class="fad fa-database"></i> 1 Cloud Backups</li>
+            						</ul>
+            						<div class="mt-4">
+            							<a href="billing/cart4f90.html?rp=/store/minecraft/spruce" class="btn">Order now</a>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="col-lg-4 col-md-4">
+            				<div class="card mc-card mb-4 text-center">
+            					<img src="assets/images/mcicons/birch.png" class="img-fluid plan-icons">
+            					<div class="card-header py-4">
+            						<h2 class="mb-0">Birch</h2>
+            					</div>
+            					<div class="card-price py-2">
+            					        &#8377;210 / <span>month</span>
+            					</div>
+            					<div class="card-body">
+            						<ul class="list-unstyled">
+            							<li><i class="fad fa-memory"></i> 4GB DDR4</li>
+            							<li><i class="fad fa-hdd"></i> 16GB NVMe SSD</li>
+            							<li><i class="fad fa-microchip"></i> Ryzen-7 (200 %)</li>
+            							<li><i class="fad fa-database"></i> 2 Cloud Backups</li>
+            						</ul>
+            						<div class="mt-4">
+            							<a href="billing/cartdb2f.html?rp=/store/minecraft/birch" class="btn">Order now</a>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="col-lg-4 col-md-4">
+            				<div class="card mc-card mb-4 text-center">
+            					<img src="assets/images/mcicons/jungle.png" class="img-fluid plan-icons">
+            					<div class="card-header py-4">
+            						<h2 class="mb-0">Jungle</h2>
+            					</div>
+            					<div class="card-price py-2">
+            						&#8377;320 / <span>month</span>
+            					</div>
+            					<div class="card-body">
+            						<ul class="list-unstyled">
+            							<li><i class="fad fa-memory"></i> 6GB DDR4</li>
+            							<li><i class="fad fa-hdd"></i> 24GB NVMe SSD</li>
+            							<li><i class="fad fa-microchip"></i> Ryzen-7 (300%)</li>
+            							<li><i class="fad fa-database"></i> 2 Cloud Backups</li>
+            						</ul>
+            						<div class="mt-4">
+            							<a href="billing/cart512a.html?rp=/store/minecraft/jungle" class="btn">Order now</a>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="col-lg-4 col-md-4">
+            				<div class="card mc-card mb-4 text-center">
+            					<img src="assets/images/mcicons/acacia.png" class="img-fluid plan-icons">
+            					<div class="card-header py-4">
+            						<h2 class="mb-0">Acacia</h2>
+            					</div>
+            					<div class="card-price py-2">
+            						&#8377;520 / <span>month</span>
+            					</div>
+            					<div class="card-body">
+            						<ul class="list-unstyled">
+            							<li><i class="fad fa-memory"></i> 8GB DDR4</li>
+            							<li><i class="fad fa-hdd"></i> 32GB NVMe SSD</li>
+            							<li><i class="fad fa-microchip"></i> Ryzen-7 (350%)</li>
+            							<li><i class="fad fa-database"></i> 2 Cloud Backups</li>
+            						</ul>
+            						<div class="mt-4">
+            							<a href="billing/cartfa83.html?rp=/store/minecraft/acacia" class="btn">Order now</a>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="col-lg-4 col-md-4">
+            				<div class="card mc-card mb-4 text-center">
+            					<img src="assets/images/mcicons/darkoak.png" class="img-fluid plan-icons">
+            					<div class="card-header py-4">
+            						<h2 class="mb-0">Dark Oak</h2>
+            					</div>
+            					<div class="card-price py-2">
+            						&#8377;720 / <span>month</span>
+            					</div>
+            					<div class="card-body">
+            						<ul class="list-unstyled">
+            							<li><i class="fad fa-memory"></i> 10GB DDR4</li>
+            							<li><i class="fad fa-hdd"></i> 40GB NVMe SSD</li>
+            							<li><i class="fad fa-microchip"></i> Ryzen-7 (400%)</li>
+            							<li><i class="fad fa-database"></i> 3 Cloud Backups</li>
+            						</ul>
+            						<div class="mt-4">
+            							<a href="billing/cart7419.html?rp=/store/minecraft/dark-oak" class="btn">Order now</a>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="col-lg-4 col-md-4">
+            				<div class="card mc-card mb-4 text-center">
+            					<img src="assets/images/mcicons/mangrove.png" class="img-fluid plan-icons">
+            					<div class="card-header py-4">
+            						<h2 class="mb-0">Mangrove</h2>
+            					</div>
+            					<div class="card-price py-2">
+            						&#8377;850 / <span>month</span>
+            					</div>
+            					<div class="card-body">
+            						<ul class="list-unstyled">
+            							<li><i class="fad fa-memory"></i> 12GB DDR4</li>
+            							<li><i class="fad fa-hdd"></i> 48GB NVMe SSD</li>
+            							<li><i class="fad fa-microchip"></i> Ryzen-7 (450%)</li>
+            							<li><i class="fad fa-database"></i> 3 Cloud Backups</li>
+            						</ul>
+            						<div class="mt-4">
+            							<a href="billing/carte791.html?rp=/store/minecraft/mangrove" class="btn">Order now</a>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="col-lg-4 col-md-4">
+            				<div class="card mc-card mb-4 text-center">
+            					<img src="assets/images/mcicons/cherry.png" class="img-fluid plan-icons">
+            					<div class="card-header py-4">
+            						<h2 class="mb-0">Cherry</h2>
+            					</div>
+            					<div class="card-price py-2">
+            						&#8377;990 / <span>month</span>
+            					</div>
+            					<div class="card-body">
+            						<ul class="list-unstyled">
+            							<li><i class="fad fa-memory"></i> 16GB DDR4</li>
+            							<li><i class="fad fa-hdd"></i> 64GB NVMe SSD</li>
+            							<li><i class="fad fa-microchip"></i> Ryzen-7 (500%)</li>
+            							<li><i class="fad fa-database"></i> 3 Cloud Backups</li>
+            						</ul>
+            						<div class="mt-4">
+            							<a href="billing/cartbf6b.html?rp=/store/minecraft/cherry" class="btn">Order now</a>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="col-lg-4 col-md-4">
+            				<div class="card mc-card mb-4 text-center">
+            					<img src="assets/images/mcicons/crimson.png" class="img-fluid plan-icons">
+            					<div class="card-header py-4">
+            						<h2 class="mb-0">Crimson</h2>
+            					</div>
+            					<div class="card-price py-2">
+            						&#8377;1290 / <span>month</span>
+            					</div>
+            					<div class="card-body">
+            						<ul class="list-unstyled">
+            							<li><i class="fad fa-memory"></i> 20GB DDR4</li>
+            							<li><i class="fad fa-hdd"></i> 80GB NVMe SSD</li>
+            							<li><i class="fad fa-microchip"></i> Ryzen-7 (600%)</li>
+            							<li><i class="fad fa-database"></i> 4 Cloud Backups</li>
+            						</ul>
+            						<div class="mt-4">
+            							<a href="billing/cart94c6.html?rp=/store/minecraft/crimson" class="btn">Order now</a>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+            let cards = document.querySelectorAll(".mc-card");
+            let scrollPos = window.scrollY;
+
+            cards.forEach((card) => {
+                let rect = card.getBoundingClientRect();
+                let centerY = window.innerHeight / 2;
+                let rotateValue = ((rect.top - centerY) / centerY) * 18; // Adjust rotation angle
+
+                card.style.transform = `rotateX(${rotateValue}deg)`;
+            });
+        });
+    });
+</script>
+
+            <!-- Features -->
+            <section class="c27r3">
+            
+                <!-- Particles animation -->
+                <div class="c2vxt c3x17 ca5ue c4cc0 cl6qg ch67j cbc5q cb4st">
+                    <div class="ca5ue cwmqr ch67j" aria-hidden="true">
+                        <canvas data-particle-animation="" data-particle-quantity="6" data-particle-staticity="30"></canvas>
+                    </div>
+                </div>
+            
+                <div class="co3q6 csm51 csya4 ccyhi">
+                    <div class="c9eon cifrc">
+            
+                        <!-- Section header -->
+                        <div class="cw9su c80wd csya4 cifrc">
+                            <h2 class="cc7gh ccqrz cx8zw c6df8 cfcmr ctwez cvc1j c4zau">Our Panel Features</h2>
+                        </div>
+            
+                        <!-- Rings illustration -->
+                        <div class="cw9su cte24">
+                            <div class="csqqr c2sao cwban c27r3">
+                                <!-- Particles animation -->
+                                <div class="ca5ue cwmqr ch67j" aria-hidden="true">
+                                    <canvas data-particle-animation="" data-particle-quantity="10"></canvas>
+                                </div>
+                                <div class="cwban">
+                                    <img src="images/pricing-illustration.svg" width="334" height="334" alt="Features illustration">
+                                </div>
+                                <img class="c02eq ca5ue" src="images/pricing-illustration-top.svg" width="396" height="328" alt="Features illustration top" aria-hidden="true">
+                                <div class="csqqr c2sao cmlo9 cuhdb ca5ue c4agq">
+                                    <div class="chkf8">
+                                        <img class="cbz0j c1c05 cwyml cy8kx cgqgn" src="images/pricing-icon-01.svg" width="80" height="80" alt="Pricing icon 01">
+                                    </div>
+                                    <div class="ccmuq">
+                                        <img class="clv7b c1c05 cax2o co332 c9e1z" src="images/pricing-icon-02.svg" width="80" height="80" alt="Pricing icon 02">
+                                    </div>
+                                    <div class="chkf8">
+                                        <img class="c0jlv c1c05 cxjfx cm0fl c0ho4" src="images/pricing-icon-03.svg" width="80" height="80" alt="Pricing icon 03">
+                                    </div>
+                                    <img class="c1c05 cw9vm" src="images/pricing-icon-04.svg" width="80" height="80" alt="Pricing icon 04">
+                                    <div class="ccmuq">
+                                        <img class="c0jlv c1c05 cxjfx cm0fl c0ho4" src="images/pricing-icon-05.svg" width="80" height="80" alt="Pricing icon 05">
+                                    </div>
+                                    <div class="chkf8">
+                                        <img class="clv7b c1c05 cax2o co332 c9e1z" src="images/pricing-icon-06.svg" width="80" height="80" alt="Pricing icon 06">
+                                    </div>
+                                    <div class="ccmuq">
+                                        <img class="animate-[float_2.6ås_ease-in-out_infinite] cxoi4 c1c05 cwyml cy8kx cgqgn" src="images/pricing-icon-07.svg" width="80" height="80" alt="Pricing icon 07">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Features list -->
+                        <div class="c4mpz cfcoj cvti0 c68vp">
+                            <!-- Card #1 -->
+                            <div class="c0c5r czt1h czyxl c0q1w c260e cn544">
+                                <div class="c2sao czw8c ck8nf c4agq ctiau">
+                                    <svg class="cl3jq" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path class="ce2m3" fill-opacity=".24" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0Z"></path>
+                                        <path class="cq9e3" fill-rule="nonzero" d="M13 6.586 14.414 8l-5.747 5.748-3.081-3.081L7 9.252l1.667 1.667z"></path>
+                                    </svg>
+                                    <p class="cmuyi cvdvu">
+                                        <strong class="cit3o ccqx1">Plugin Installer</strong> We have One Click Plugin Installer .
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card #2 -->
+                            <div class="c0c5r czt1h czyxl c0q1w c260e cn544">
+                                <div class="c2sao czw8c ck8nf c4agq ctiau">
+                                    <svg class="cl3jq" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path class="ce2m3" fill-opacity=".24" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0Z"></path>
+                                        <path class="cq9e3" fill-rule="nonzero" d="M13 6.586 14.414 8l-5.747 5.748-3.081-3.081L7 9.252l1.667 1.667z"></path>
+                                    </svg>
+                                    <p class="cmuyi cvdvu">
+                                        <strong class="cit3o ccqx1">Subdomain Panel</strong> You can select Your Own desired Domain.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card #3 -->
+                            <div class="c0c5r czt1h czyxl c0q1w c260e cn544">
+                                <div class="c2sao czw8c ck8nf c4agq ctiau">
+                                    <svg class="cl3jq" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path class="ce2m3" fill-opacity=".24" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0Z"></path>
+                                        <path class="cq9e3" fill-rule="nonzero" d="M13 6.586 14.414 8l-5.747 5.748-3.081-3.081L7 9.252l1.667 1.667z"></path>
+                                    </svg>
+                                    <p class="cmuyi cvdvu">
+                                        <strong class="cit3o ccqx1"> Player manager</strong> You Can Easily Manage All Player data.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card #4 -->
+                            <div class="c0c5r czt1h czyxl c0q1w c260e cn544">
+                                <div class="c2sao czw8c ck8nf c4agq ctiau">
+                                    <svg class="cl3jq" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path class="ce2m3" fill-opacity=".24" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0Z"></path>
+                                        <path class="cq9e3" fill-rule="nonzero" d="M13 6.586 14.414 8l-5.747 5.748-3.081-3.081L7 9.252l1.667 1.667z"></path>
+                                    </svg>
+                                    <p class="cmuyi cvdvu">
+                                        <strong class="cit3o ccqx1">Version Changer</strong> Change Your Software or Version Anytime You Want.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card #5 -->
+                            <div class="c0c5r czt1h czyxl c0q1w c260e cn544">
+                                <div class="c2sao czw8c ck8nf c4agq ctiau">
+                                    <svg class="cl3jq" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path class="ce2m3" fill-opacity=".24" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0Z"></path>
+                                        <path class="cq9e3" fill-rule="nonzero" d="M13 6.586 14.414 8l-5.747 5.748-3.081-3.081L7 9.252l1.667 1.667z"></path>
+                                    </svg>
+                                    <p class="cmuyi cvdvu">
+                                       <strong class="cit3o ccqx1">Server Properties</strong> We Support One Click server prop. Management.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card #6 -->
+                            <div class="c0c5r czt1h czyxl c0q1w c260e cn544">
+                                <div class="c2sao czw8c ck8nf c4agq ctiau">
+                                    <svg class="cl3jq" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path class="ce2m3" fill-opacity=".24" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0Z"></path>
+                                        <path class="cq9e3" fill-rule="nonzero" d="M13 6.586 14.414 8l-5.747 5.748-3.081-3.081L7 9.252l1.667 1.667z"></path>
+                                    </svg>
+                                    <p class="cmuyi cvdvu">
+                                        <strong class="cit3o ccqx1">Panel Theme</strong> Cool Modern Style Panel Theme you will like it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+
+
+
+	<!-- DDoS -->
+	<div class="ddos py-5">
+		<div class="container-fluid container-custom">
+			<div class="row d-flex justify-content-between">
+				<div class="col-lg-6">
+					<svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" width="400" height="400" x="0" y="0" class="svg" version="1.1" viewBox="0 0 496.8 498">
+						<path fill="none" stroke="#2f334b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M490.9 248.5c0 133.9-108.6 242.5-242.5 242.5S5.9 382.4 5.9 248.5C5.9 114.5 114.5 6 248.4 6s242.5 108.5 242.5 242.5z"/>
+						<path d="M248.4 19.7v457.5m-228.8-229h457.6M76.5 419.9 410 86.5m-323.3.1 323.5 323.6" class="ddosa1"/>
+						<path d="M433.7 248.5c0 102.4-83 185.3-185.3 185.3-102.4 0-185.3-83-185.3-185.3 0-102.4 83-185.3 185.3-185.3 102.4-.1 185.3 82.9 185.3 185.3z" class="ddosa2"/>
+						<path d="M477.2 248.5c0 126.4-102.4 228.8-228.8 228.8C122 477.2 19.6 374.8 19.6 248.5 19.6 122.1 122 19.7 248.4 19.7s228.8 102.4 228.8 228.8z" class="ddosa2"/>
+						<path d="M372.4 248.5c0 68.5-55.5 124-124 124s-124-55.5-124-124 55.5-124 124-124 124 55.5 124 124z" class="ddosa2"/>
+						<path d="M315.3 248.5c0 36.9-29.9 66.9-66.9 66.9-36.9 0-66.9-29.9-66.9-66.9 0-36.9 29.9-66.9 66.9-66.9 36.9 0 66.9 29.9 66.9 66.9z" class="ddosa2"/>
+						<path d="M249 63.1v18.3m37.8-14.1L283 85.1m40.5-5.8L316.2 96m40.7 2.7-10.6 14.7m39.3 11.1-13.5 12.2m36.2 19-15.7 9.1M424 191l-17.2 5.7m25.2 32-18 2m18 36.5-16.6-1.7m8.6 39.9-17.1-5.6m1.4 40.7-15.5-8.9m-7.3 40.2-13.2-11.9m-15.5 37.7-10.3-14.3m-23.1 33.6-7.1-16m-29.5 27.9-3.6-17.1M64.4 228.8l17.5 1.7m-9.4-39.9 16.8 5.5m-1.1-40.7 15.4 9m7.4-40.3 13.3 12.1m15.3-37.9 10.6 14.7M173 79l7.4 16.7m29.3-28.3 3.8 17.6M248 432.9v-17.4m-38.1 13.1 3.5-16.7m-40.3 4.8 6.9-15.6m-40.3-3.8 10-13.8m-38.6-12 12.6-11.4m-35.3-19.8 14.7-8.6M72.6 305l16.3-5.4m-24.3-32.3 17.2-1.9" class="ddosa1"/>
+						<path id="svg-concept" d="M437.8 256.6c0 2.3-1.8 4.1-4.1 4.1s-4.1-1.8-4.1-4.1 1.8-4.1 4.1-4.1 4.1 1.9 4.1 4.1zM293.7 132c0 2.3-1.8 4.1-4.1 4.1s-4.1-1.8-4.1-4.1 1.8-4.1 4.1-4.1 4.1 1.8 4.1 4.1zm-68.5 177.4c0 2.3-1.8 4.1-4.1 4.1s-4.1-1.8-4.1-4.1 1.8-4.1 4.1-4.1c2.2.1 4.1 1.9 4.1 4.1zm73.2 54.2c0 2.3-1.8 4.1-4.1 4.1s-4.1-1.8-4.1-4.1 1.8-4.1 4.1-4.1c2.2 0 4.1 1.8 4.1 4.1zM73.5 201.9c0 2.3-1.8 4.1-4.1 4.1s-4.1-1.8-4.1-4.1 1.8-4.1 4.1-4.1c2.3.1 4.1 1.9 4.1 4.1z" class="ddosa3"/><g>
+							<path fill="none" stroke="#0195f4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M248.4 6C316 6 372 32.9 419.5 77L248.4 248.4V6z"/>
+							<animateTransform attributeName="transform" dur="6s" from="0 248 249" repeatCount="indefinite" to="360 248 249" type="rotate"/>
+						</g>
+						<path d="M258.9 248.2c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5 4.7-10.5 10.5-10.5 10.5 4.7 10.5 10.5z" class="ddosa3"/><path d="M252.3 248.2c0 2.2-1.7 3.9-3.9 3.9s-3.9-1.8-3.9-3.9 1.7-3.9 3.9-3.9 3.9 1.7 3.9 3.9zm6.6 0h-6.6m-7.8 0h-6.6" style="fill:none;stroke:#0195f4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+					</svg>
+				</div>
+				<div class="col-lg-6 d-flex align-items-center">
+					<div class="ddos_content">
+						<h2>Anti-DDoS</h2>
+						<p>Our premium dedicated game servers are protected by always-on Best DDoS protection highly suited to games such as Minecraft, RUST, ARK, CS:GO, FiveM and others.</p>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+            <!-- FAQs -->
+            <section class="c27r3">
+
+                <!-- Blurred shape -->
+                <div class="c3sb3 c2vxt c05ax cp4r7 c3x17 ca5ue c7upq cl6qg ch67j cwsqy" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                        <defs>
+                            <linearGradient id="bs3-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                                <stop offset="0%" stop-color="#6366F1"></stop>
+                                <stop offset="100%" stop-color="#6366F1" stop-opacity="0"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#bs3-a)" fill-rule="evenodd" d="m410 0 461 369-284 58z" transform="matrix(1 0 0 -1 -410 427)"></path>
+                    </svg>
+                </div>
+
+                <div class="co3q6 csm51 csya4 ccyhi">
+                    <div class="ctnn6 cuwj8 ckogj cx3i6">
+
+
+                    </div>
+                </div>
+            </section>
+
+           
+        </main>
+
+        <!-- Site footer -->
+<footer>
+  <div class="footer-container">
+
+    <!-- Company Info -->
+    <div>
+      <img src="images/logoo.png" alt="MG Nodes Logo" class="footer-logo">
+      <p class="footer-description">
+        MG Nodes, founded to provide top-tier hosting for gaming and applications. We ensure powerful servers, excellent uptime, and solid support.
+      </p>
+      <p class="footer-copy">© mythicalcloud.com - All rights reserved.</p>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h6 class="footer-heading">Services</h6>
+      <ul class="footer-links">
+        <li><a href="all-games.html">Game Servers</a></li>
+        <li><a href="vps.html">VPS Hosting</a></li>
+        <li><a href="bot.html">Bot Hosting</a></li>
+      </ul>
+    </div>
+
+    <!-- Games -->
+    <div>
+      <h6 class="footer-heading">Popular Games</h6>
+      <ul class="footer-links">
+        <li><a href="minecraft.html">Minecraft</a></li>
+        <li><a href="ark.html">Ark</a></li>
+        <li><a href="rust.html">Rust</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div>
+      <h6 class="footer-heading">Resources</h6>
+      <ul class="footer-links">
+        <li><a href="refund.html">Refund Policy</a></li>
+        <li><a href="tos.html">Terms & Conditions</a></li>
+        <li><a href="priv.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div>
+      <h6 class="footer-heading">Company</h6>
+      <ul class="footer-links">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="partners.html">Partners</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+</footer>
+    </div>
+
+    <script src="js/vendors/alpinejs.min.js" defer=""></script>
+    <script src="js/vendors/aos.js"></script>
+    <script src="js/vendors/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+  <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".dropdown");
+
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector(".dropdown-toggle");
+
+        toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Close other dropdowns
+            dropdowns.forEach(d => {
+                if (d !== dropdown) {
+                    d.classList.remove("open");
+                }
+            });
+
+            // Toggle current dropdown
+            dropdown.classList.toggle("open");
+        });
+
+        // Prevent closing when clicking inside the dropdown
+        dropdown.querySelector(".dropdown-menu").addEventListener("click", function (e) {
+            e.stopPropagation();
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (e) {
+        if (!e.target.closest(".dropdown")) {
+            dropdowns.forEach(dropdown => dropdown.classList.remove("open"));
+        }
+    });
+});
+
+
+  </script>
+  </script>
+<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '1194860366853853254', // Mythicalcloud | Minecraft Hosting
+        channel: '1315528218811432960' // #ccc
+    })
+</script>
+
+
+
+
+</body>
+<!-- Mirrored from mythicalcloud.com/minecraft by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 May 2025 09:20:41 GMT -->
+</html>
